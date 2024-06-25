@@ -1,0 +1,25 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  db:
+    container_name: sqlite-teams-container
+    image: keinos/sqlite3:latest
+    volumes:
+      - ./data/db.sqlite3:/code/db.sqlite3
+    restart: always
+
+  web:
+    build: .
+    volumes:
+      - .:/code
+    command: >
+      sh -c "python teams_config/manage.py migrate &&      
+             python teams_config/manage.py runserver 0.0.0.0:8081"
+    ports:
+      - "8081:8081"
+    depends_on:
+      - db
+    environment:
+      - PYTHONPATH=/code
