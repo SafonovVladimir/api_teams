@@ -70,7 +70,7 @@ API буде доступне за адресою `http://0.0.0.0:8081/`.
 
 ### Головний екран API
 
-![screenshot](/team_config/readme_images/main_screen.jpg "Main_screen")
+![screenshot](api_teams/teams_config/readme_images/main_screen.jpg)
 
 ### Додавання нової команди
 
@@ -82,7 +82,7 @@ API буде доступне за адресою `http://0.0.0.0:8081/`.
         "name": "Ferrari"
     }
     ```
-![screenshot](/team_config/readme_images/add_new_team.jpg "Add new team")
+![screenshot](/api_teams/teams_config/readme_images/add_new_team.jpg)
 
 ### Додавання нової людини
 
@@ -97,7 +97,7 @@ API буде доступне за адресою `http://0.0.0.0:8081/`.
         "team": "Ferrari"
     }
     ```
-![screenshot](/team_config/readme_images/add_new_person.jpg "Add new person")
+![screenshot](/api_teams/teams_config/readme_images/add_new_person.jpg)
 
 Цей README.md файл містить інформацію про налаштування змінних середовища,
 використання `load_dotenv()` для завантаження секретних ключів та інструкції по встановленню,
